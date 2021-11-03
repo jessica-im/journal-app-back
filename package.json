@@ -2,8 +2,8 @@
   "name": "journal-app-back",
   "version": "1.0.0",
   "engines": {
-       "16.13.0"
- },
+       "node": "16.13.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
