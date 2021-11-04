@@ -22,7 +22,7 @@ app.use(express.json())
 
 
 app.get('/', (req, res) => {
-     res.send('hi')
+     res.send('kb was here')
 })
 
 
