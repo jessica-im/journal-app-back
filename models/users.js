@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Entry = require('./models/entries.js')
+const Entry = require('./entries.js')
 
 const usersSchema = mongoose.Schema({
      name: String,

@@ -22,9 +22,12 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
-     res.send('hi')
-})
+const entriesController = require('./controllers/entries.js')
+app.use('/entries', entriesController)
+
+// app.get('/', (req, res) => {
+//      res.send('hi')
+// })
 
 app.listen(PORT, () => {
      console.log('hello, listening on: ', PORT);

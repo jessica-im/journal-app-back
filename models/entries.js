@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const entrySchema = new mongooseSchema({
+const entrySchema = new mongoose.Schema({
      date: String,
      title: String,
      log: String,
