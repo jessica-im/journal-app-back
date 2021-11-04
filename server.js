@@ -22,9 +22,9 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(cors())
 
-// app.get('/', (req, res) => {
-//      res.send('hi')
-// })
+app.get('/', (req, res) => {
+     res.send('hi')
+})
 
 app.listen(PORT, () => {
      console.log('hello, listening on: ', PORT);
