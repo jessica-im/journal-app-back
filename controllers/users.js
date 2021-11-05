@@ -7,8 +7,14 @@ const User = require('../models/users.js')
 //      res.send('hihihi')
 // })
 
+// router.get('/', (req, res) => {
+//      res.json('Hello World')
+// })
+
 router.get('/', (req, res) => {
-     res.json('Hello World')
+     User.find({}, (err, allUsers) => {
+          res.json(allUsers)
+     })
 })
 
 router.post('/createaccount', (req, res) => {
