@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const Entry = require('../models/entries.js')
-const User = require('../models/users.js')
+// const User = require('../models/users.js')
 
 
 router.get('/', (req, res) => {
