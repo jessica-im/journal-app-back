@@ -1,3 +1,5 @@
+// Cannot use sessions for react
+
 // const express = require('express')
 // const bcrypt = require('bcrypt')
 // const router = express.Router()

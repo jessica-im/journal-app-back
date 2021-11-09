@@ -31,7 +31,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 /////////////////////////////////
 
 const entriesController = require('./controllers/entries.js')
-// const usersController = require('./controllers/users.js')
+const usersController = require('./controllers/users.js')
 
 /////////////////////////////////
 //         Middleware
@@ -40,7 +40,7 @@ const entriesController = require('./controllers/entries.js')
 app.use(express.json())
 app.use(cors())
 app.use('/entries', entriesController)
-// app.use('/users', usersController)
+app.use('/users', usersController)
 
 /////////////////////////////////
 //           Routes
